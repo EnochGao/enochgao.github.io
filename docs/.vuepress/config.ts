@@ -2,9 +2,6 @@ import { defaultTheme, defineUserConfig } from "vuepress";
 import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 import { sidebar } from "./configs/sidebar";
 import { navbar } from "./configs/navbar";
-import { getDirname, path } from "@vuepress/utils";
-
-const __dirname = getDirname(import.meta.url);
 
 const isProd = process.env.NODE_ENV === "production";
 
