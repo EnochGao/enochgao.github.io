@@ -11,4 +11,11 @@ export const sidebar: SidebarConfig = {
       ],
     },
   ],
+  '/design-patterns': [
+    {
+      text: '设计模式',
+      collapsible: true,
+      children: ['/design-patterns/design-principle.md'],
+    },
+  ],
 };

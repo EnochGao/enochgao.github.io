@@ -28,4 +28,8 @@ export const navbar: NavbarConfig = [
       },
     ],
   },
+  {
+    text: '设计模式',
+    link: '/design-patterns',
+  },
 ];
