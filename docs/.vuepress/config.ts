@@ -13,7 +13,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'EnochGao的博客',
   description: '活在当下，珍惜眼前。技术并不是生活的全部...',
-  base: '/blog/',
+  base: '/',
   theme: defaultTheme({
     logo: 'https://avatars.githubusercontent.com/u/41459067?v=4',
     repo: 'https://github.com/EnochGao/blog',
