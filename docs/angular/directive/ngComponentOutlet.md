@@ -1,10 +1,3 @@
----
-# 字符串 - 页面文件相对路径
-prev:
-  text: 上一篇
-  link: ./ngTemplateOutlet.md
----
-
 # ngComponentOutlet指令
 
 ## 前言
@@ -46,7 +39,7 @@ export class AppComponent{ // app组件
 
 效果图：
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c18651430d9b4e9ea1ee4c9dbe48e5ec~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](./images/ngComponentOutlet-hello.png)
 可以看到`ngComponentOutlet`指令将hello组件渲染到app组件中。
 
 ## 其他控制项
@@ -123,7 +116,7 @@ export class AppComponent { // app组件
 ```
 
 效果图：
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e0ac77b8e8474c7b98c96516a5a0bdd2~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](./images//ngComponentOutlet-content.png)
 
 此外我们还可以指定`ngComponentOutletNgModuleFactory`(v14版本中模块工厂会被删除，将会直接传递moduleRef)
 
@@ -179,7 +172,7 @@ export class AppComponent { // app组件
 
 效果图：
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1322c0b835cb446891d248e5161c8439~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](./images/ngComponentOutlet-factory.png)
 
 ## 源码分析
 

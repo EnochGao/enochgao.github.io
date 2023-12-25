@@ -1,9 +1,3 @@
----
-next:
-  text: 下一篇
-  link: ./ngComponentOutlet.md
----
-
 # ngTemplateOutlet指令
 
 ## 前提
@@ -24,7 +18,7 @@ next:
 
 demo:
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a170c96a5f74b57893a70ae4c80c89b~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](./images/ngTemplateOutlet-heart.png)
 
 ```ts
 import { Component } from '@angular/core';

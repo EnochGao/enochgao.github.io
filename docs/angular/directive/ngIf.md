@@ -1,9 +1,3 @@
----
-next:
-  text: 下一篇
-  link: ./ngComponentOutlet.md
----
-
 # ngIf指令
 
 ## 前提
@@ -77,6 +71,7 @@ Angular 将其扩展为更明确的版本，其中锚点元素包含在 `<ng-tem
   <div>Loading...</div>
 </ng-template>
 ```
+
 ## 源码分析
 
 源码：
