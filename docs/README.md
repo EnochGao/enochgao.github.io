@@ -1,7 +1,6 @@
 ---
 home: true
 title: 首页
-heroImage: https://angular.cn/assets/images/logos/angular/angular.svg
-
+heroImage: /images/home.png
 footer: MIT Licensed | Copyright © 2022-present Enoch Gao
 ---
