@@ -5,7 +5,7 @@ prev:
   link: ./ngTemplateOutlet.md
 ---
 
-# ngComponentOutlet
+# ngComponentOutlet指令
 
 ## 前言
 

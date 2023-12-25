@@ -4,6 +4,7 @@ export const sidebar: SidebarConfig = {
   '/angular/directive': [
     {
       text: '指令',
+      collapsible: true,
       children: [
         '/angular/directive/ngTemplateOutlet.md',
         '/angular/directive/ngComponentOutlet.md',

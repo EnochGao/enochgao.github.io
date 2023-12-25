@@ -4,7 +4,7 @@ next:
   link: ./ngComponentOutlet.md
 ---
 
-# ngIf
+# ngIf指令
 
 ## 前提
 

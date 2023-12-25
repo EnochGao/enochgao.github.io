@@ -4,7 +4,7 @@ next:
   link: ./ngComponentOutlet.md
 ---
 
-# ngTemplateOutlet
+# ngTemplateOutlet指令
 
 ## 前提
 
@@ -69,7 +69,7 @@ export class NzDemoRateCharacterComponent {}
 
 让我们继续剖析`ngTemplateOutlet`是怎么实现的。
 
-## ngTemplateOutlet 源码分析（v13.3.x）
+## 源码分析（v13.3.x）
 
 其实`ngTemplateOutlet`是一个angular框架的内置结构指令。源码地址[戳](https://github.com/angular/angular/tree/13.3.x/packages/common/src/directives/ng_template_outlet.ts)。
 
