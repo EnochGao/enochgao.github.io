@@ -3,6 +3,7 @@ import { backToTopPlugin } from '@vuepress/plugin-back-to-top';
 import { nprogressPlugin } from '@vuepress/plugin-nprogress';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
+import { commentPlugin } from 'vuepress-plugin-comment2';
 
 import { sidebar } from './configs/sidebar';
 import { navbar } from './configs/navbar';
@@ -54,6 +55,17 @@ export default defineUserConfig({
       prismjs: !isProd,
     },
   }),
-  plugins: [backToTopPlugin(), nprogressPlugin(), prismjsPlugin()],
+  plugins: [
+    backToTopPlugin(),
+    nprogressPlugin(),
+    prismjsPlugin(),
+    commentPlugin({
+      provider: 'Giscus',
+      repo: 'EnochGao/enochgao.github.io',
+      repoId: 'R_kgDOHy84IA',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOHy84IM4Cb_5c',
+    }),
+  ],
   alias: {},
 });
