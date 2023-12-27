@@ -4,6 +4,8 @@ import { nprogressPlugin } from '@vuepress/plugin-nprogress';
 import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 import { commentPlugin } from 'vuepress-plugin-comment2';
+import { copyCodePlugin } from 'vuepress-plugin-copy-code2';
+import { readingTimePlugin } from 'vuepress-plugin-reading-time2';
 
 import { sidebar } from './configs/sidebar';
 import { navbar } from './configs/navbar';
@@ -59,6 +61,10 @@ export default defineUserConfig({
     backToTopPlugin(),
     nprogressPlugin(),
     prismjsPlugin(),
+    copyCodePlugin(),
+    readingTimePlugin({
+      wordPerMinute: 300,
+    }),
     commentPlugin({
       provider: 'Giscus',
       repo: 'EnochGao/enochgao.github.io',
