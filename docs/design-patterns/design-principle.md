@@ -1,6 +1,6 @@
-# 设计原则
+# 设计原则(SOLID)
 
-## 单一职责原则（SRP）
+## 单一职责原则（Single Responsibility Principle）
 
 一个类只负责一个功能领域，一个类应该只有一个引起它变化的原因。
 
