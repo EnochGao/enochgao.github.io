@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { onUnmounted, onMounted, ref } from 'vue';
 import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue';
 import { useReadingTimeLocale } from 'vuepress-plugin-reading-time2/client';
