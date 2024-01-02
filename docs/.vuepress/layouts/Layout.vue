@@ -29,7 +29,7 @@ onMounted(() => {
 <template>
   <ParentLayout>
     <template #page-content-top>
-      <h7>{{ readingTimeLocale.words }}， {{ readingTimeLocale.time }}</h7>
+      {{ readingTimeLocale.words }}， {{ readingTimeLocale.time }}
     </template>
     <template #page-bottom>
       <CommentService :darkmode="isDarkMode" />

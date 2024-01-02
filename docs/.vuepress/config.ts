@@ -1,5 +1,3 @@
-import { backToTopPlugin } from '@vuepress/plugin-back-to-top';
-import { nprogressPlugin } from '@vuepress/plugin-nprogress';
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 import { defaultTheme, defineUserConfig } from 'vuepress';
 import { commentPlugin } from 'vuepress-plugin-comment2';
@@ -57,8 +55,6 @@ export default defineUserConfig({
     },
   }),
   plugins: [
-    backToTopPlugin(),
-    nprogressPlugin(),
     prismjsPlugin(),
     copyCodePlugin(),
     readingTimePlugin({}),
