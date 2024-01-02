@@ -62,9 +62,7 @@ export default defineUserConfig({
     nprogressPlugin(),
     prismjsPlugin(),
     copyCodePlugin(),
-    readingTimePlugin({
-      wordPerMinute: 300,
-    }),
+    readingTimePlugin({}),
     commentPlugin({
       provider: 'Giscus',
       repo: 'EnochGao/enochgao.github.io',
