@@ -1,14 +1,13 @@
-import { defaultTheme, defineUserConfig } from 'vuepress';
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top';
 import { nprogressPlugin } from '@vuepress/plugin-nprogress';
-import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { prismjsPlugin } from '@vuepress/plugin-prismjs';
+import { defaultTheme, defineUserConfig } from 'vuepress';
 import { commentPlugin } from 'vuepress-plugin-comment2';
 import { copyCodePlugin } from 'vuepress-plugin-copy-code2';
 import { readingTimePlugin } from 'vuepress-plugin-reading-time2';
 
-import { sidebar } from './configs/sidebar';
 import { navbar } from './configs/navbar';
+import { sidebar } from './configs/sidebar';
 
 const isProd = process.env.NODE_ENV === 'production';
 
