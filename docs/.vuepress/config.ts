@@ -3,6 +3,7 @@ import { defaultTheme, defineUserConfig } from 'vuepress';
 import { commentPlugin } from 'vuepress-plugin-comment2';
 import { copyCodePlugin } from 'vuepress-plugin-copy-code2';
 import { readingTimePlugin } from 'vuepress-plugin-reading-time2';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
@@ -64,6 +65,11 @@ export default defineUserConfig({
       repoId: 'R_kgDOHy84IA',
       category: 'Announcements',
       categoryId: 'DIC_kwDOHy84IM4Cb_5c',
+    }),
+    docsearchPlugin({
+      appId: 'GVP52MKQ3I',
+      apiKey: 'e9069e1fc4843517d12e07735a87104b',
+      indexName: 'enochgaoio',
     }),
   ],
   alias: {},
