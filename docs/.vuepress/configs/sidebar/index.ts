@@ -19,4 +19,10 @@ export const sidebar: SidebarConfig = {
       children: ['/design-patterns/design-principle.md'],
     },
   ],
+  '/pagedjs': [
+    {
+      text: '',
+      children: ['/pagedjs/big-picture.md', '/pagedjs/getting-start.md'],
+    },
+  ],
 };
