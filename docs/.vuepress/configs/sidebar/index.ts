@@ -22,7 +22,11 @@ export const sidebar: SidebarConfig = {
   '/pagedjs': [
     {
       text: '',
-      children: ['/pagedjs/big-picture.md', '/pagedjs/getting-start.md'],
+      children: [
+        '/pagedjs/big-picture.md',
+        '/pagedjs/getting-start.md',
+        '/pagedjs/how-pagedjs-works.md',
+      ],
     },
   ],
 };
