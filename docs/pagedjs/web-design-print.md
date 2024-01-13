@@ -128,3 +128,97 @@
 如果你的文档是一本正反页的书(即不需要对页)，你可以用同样的方式使用 :recto 和 :verso 页选择器。
 
 ## 分页符
+
+当内容无法放入页面时，Paged.js 会自动创建分页符，但你可能需要控制这种分页，比如在书中，你可能希望所有章节都从右页开始，有一些属性可以帮助你做到这一点。
+
+`break-before` 属性表示元素应该从新页面开始，可以是:
+
+- 使用 `break-before: page` 时，元素可以从任何新页开始；
+- 元素开始于下一个右页或下一个左页(如果需要，会自动创建一个 `blank` 页)；
+- 使用 `break-before: recto` 或 `break-before: verso` 可以替代 `break-before: right` 或 `break-before: left` ；
+
+假设你所有的书章节都在 `<section>` 元素中，并且带有 `chapter` 样式类，你希望你的章节总是从右页开始，你可以这样写：
+
+```css
+.chapter {
+  break-before: right;
+}
+```
+
+你也可以在内联元素上使用分页符，例如，下面的代码强制二级标题总是在新页面开始：
+
+```css
+h2 {
+  break-before: page;
+}
+```
+
+如果你喜欢，也可以用同样的方式使用 `break-after` ：
+
+- `break-after: page` 将把 元素后面的内容推到下一个页面；
+- `break-after: right` 或 `break-after: left` 将把内容推送到下一个右/左页面的元素后面;
+- `break-after: recto` 或 `break-after: verso` 会将内容推送到下一个 recto 或 verso 页面的元素之后;
+
+## 页面的伪类选择器
+
+W3C 为特定页面定义了伪类选择器，我们已经见过 `:left` 和 `:right` 选择器，但还有一些其他有用的选择器：
+
+- `:first`，选择文档的第一页
+- `nth()` ，让你指定你想选择的页码(例如：`@page:nth(3)` 选择第三页)
+- `:blank`，选择文档中的所有空白页(空白页是强制左、右换页的结果)
+
+被伪类选择器匹配的页面也可以被其他页面伪类匹配。应用的规则是根据 CSS 级联原则定义的。
+
+## Bleeds（出血）
+
+![img](./images/bleed.png)
+
+为了确保在打印时不会有任何可见的白纸，我们使用 `bleed` 属性，它指定了页面框外溢出的区域的大小，它不会影响页面上内容的空间。
+
+```css
+@page {
+  bleed: 6mm;
+}
+```
+
+## 剪切和十字标记
+
+你可以在页面框外添加裁剪标记以便于裁剪，对于专业印刷，也可以添加十字标标记，这些标记用于在印刷过程中对齐纸张。
+
+这两种类型的标记必须添加在相同的 marks 属性中，您可以使用其中一种或两种。
+
+```css
+/* crop: 将显示裁切标记。指示应在何处裁切页面
+cross: 十字标记将显示。用于对齐纸张 */
+@page {
+  marks: crop cross;
+}
+
+@page {
+  marks: crop;
+}
+```
+
+## 代码回顾
+
+```css
+@media print {
+  @page {
+    size: 140mm 200mm;
+    margin: 10mm 15mm;
+    bleed: 6mm;
+    marks: crop cross;
+  }
+  @page: left {
+    margin-left: 35mm;
+    margin-right: 15mm;
+  }
+  @page: right {
+    margin-left: 15mm;
+    margin-right: 35mm;
+  }
+  .chapter {
+    break-before: right;
+  }
+}
+```
