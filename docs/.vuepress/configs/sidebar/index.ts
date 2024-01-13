@@ -27,6 +27,7 @@ export const sidebar: SidebarConfig = {
         '/pagedjs/getting-start.md',
         '/pagedjs/how-pagedjs-works.md',
         '/pagedjs/web-design-print.md',
+        '/pagedjs/generated-content.md',
       ],
     },
   ],
