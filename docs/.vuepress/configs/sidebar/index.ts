@@ -28,6 +28,7 @@ export const sidebar: SidebarConfig = {
         '/pagedjs/how-pagedjs-works.md',
         '/pagedjs/web-design-print.md',
         '/pagedjs/generated-content.md',
+        '/pagedjs/generated-content-in-margin-boxes.md',
       ],
     },
   ],
