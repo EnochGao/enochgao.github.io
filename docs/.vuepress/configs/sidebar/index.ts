@@ -1,6 +1,12 @@
 import { SidebarConfig } from 'vuepress';
 
 export const sidebar: SidebarConfig = {
+  '/chore': [
+    {
+      text: '',
+      children: ['/chore/chore.md'],
+    },
+  ],
   '/angular/directive': [
     {
       text: '指令',

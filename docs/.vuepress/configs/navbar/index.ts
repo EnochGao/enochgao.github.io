@@ -2,17 +2,25 @@ import { NavbarConfig } from 'vuepress';
 
 export const navbar: NavbarConfig = [
   {
-    text: 'Angular源码解析',
+    text: '杂项',
+    link: '/chore/chore.md',
+  },
+  {
+    text: '源码解析',
     children: [
       {
-        text: '指令',
+        text: 'Angular',
         link: '/angular/directive/ngTemplateOutlet.md',
       },
     ],
   },
   {
-    text: 'ng组件库翻译',
+    text: '翻译',
     children: [
+      {
+        text: 'pagedjs',
+        link: '/pagedjs/big-picture.md',
+      },
       {
         text: 'primeng',
         link: 'https://enochgao.github.io/primeng-cn/',
@@ -20,7 +28,7 @@ export const navbar: NavbarConfig = [
     ],
   },
   {
-    text: 'JavaScript视频',
+    text: '视频',
     children: [
       {
         text: 'es5',
@@ -31,9 +39,5 @@ export const navbar: NavbarConfig = [
   {
     text: '设计模式',
     link: '/design-patterns',
-  },
-  {
-    text: 'pagedjs',
-    link: '/pagedjs/big-picture.md',
   },
 ];
