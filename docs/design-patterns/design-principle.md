@@ -22,4 +22,10 @@
 
 依赖倒转原则（Dependency Inversion Principal）抽象不应该依赖于细节，细节应该依赖于抽象，高层模块不应该直接依赖低层模块，应该都依赖于抽象，不能直接依赖具体类。
 
-## 迪米特法则（Law of Demeter）
+## 迪米特法则（LOD）
+
+迪米特法则（Law of Demeter）一个对象应该对其他对象有最少的了解
+
+## 合成复用原则（CRP）
+
+合成复用原则（Composite Reuse Principle）尽量使用组合/聚合的方式，而不是使用继承。
