@@ -12,11 +12,11 @@ const isProd = process.env.NODE_ENV === 'production';
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'EnochGao的博客',
-  description: '活在当下，珍惜眼前。技术并不是生活的全部...',
+  title: 'Enoch Blog',
+  description: '珍惜眼前，技术并不是生活的全部。',
   base: '/',
   theme: defaultTheme({
-    logo: 'https://avatars.githubusercontent.com/u/41459067?v=4',
+    logo: '/images/avatar.png',
     repo: 'https://github.com/EnochGao/blog',
     docsDir: 'docs',
     locales: {
