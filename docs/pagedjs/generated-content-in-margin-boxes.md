@@ -127,3 +127,11 @@ h2 {
 `string` 属性的作用类似于变量。它读取 DOM，每次遇到新的 2 级标题时，它都会更改页面上的变量。这个变量会被传递到页面的外边距框中，以及接下来的所有外边距框中，直到有新的标题为止。
 
 ![img](https://pagedjs.org/images/string-set.png)
+
+## string-set 选择内容
+
+这部分在 Paged.js 中暂时不能正常工作，问题 [#45](https://gitlab.coko.foundation/pagedjs/pagedjs/issues/45),[#42](https://gitlab.coko.foundation/pagedjs/pagedjs/issues/42)
+
+文档需要完成
+
+可以指定要选择元素的哪一部分来构造命名字符串的值。此参数是强制的。

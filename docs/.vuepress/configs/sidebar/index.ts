@@ -38,4 +38,11 @@ export const sidebar: SidebarConfig = {
       ],
     },
   ],
+  '/weekly-dairy': [
+    {
+      text: '2024-01',
+      collapsible: true,
+      children: ['/weekly-dairy/2401/1.md'],
+    },
+  ],
 };
