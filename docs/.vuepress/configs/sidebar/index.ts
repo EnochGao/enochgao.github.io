@@ -35,6 +35,8 @@ export const sidebar: SidebarConfig = {
         '/pagedjs/web-design-print.md',
         '/pagedjs/generated-content.md',
         '/pagedjs/generated-content-in-margin-boxes.md',
+        '/pagedjs/supported-feature-of-w3c.md',
+        '/pagedjs/specifications-for-printing.md',
       ],
     },
   ],
