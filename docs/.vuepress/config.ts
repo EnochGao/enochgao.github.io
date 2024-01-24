@@ -3,6 +3,7 @@ import { defaultTheme, defineUserConfig } from 'vuepress';
 import { commentPlugin } from 'vuepress-plugin-comment2';
 import { copyCodePlugin } from 'vuepress-plugin-copy-code2';
 import { readingTimePlugin } from 'vuepress-plugin-reading-time2';
+import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 
 import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
@@ -55,6 +56,7 @@ export default defineUserConfig({
     },
   }),
   plugins: [
+    prismjsPlugin(),
     copyCodePlugin(),
     readingTimePlugin({}),
     commentPlugin({
