@@ -41,7 +41,7 @@ export const navbar: NavbarConfig = [
     link: '/design-patterns',
   },
   {
-    text: '周记',
+    text: '随笔',
     link: '/weekly-dairy',
   },
 ];
