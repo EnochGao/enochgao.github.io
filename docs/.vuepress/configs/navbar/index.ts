@@ -37,6 +37,15 @@ export const navbar: NavbarConfig = [
     ],
   },
   {
+    text: '项目',
+    children: [
+      {
+        text: '组件',
+        link: 'https://enochgao.github.io/ng-zorro-antd-extension/',
+      },
+    ],
+  },
+  {
     text: '设计模式',
     link: '/design-patterns',
   },
