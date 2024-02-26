@@ -1,29 +1,30 @@
-# git分支规范
+# git 分支规范
 
 合并有风险，操作需谨慎。
 合并之前要问一遍自己：当前操作分支，要合并到哪里去，是否确认合并。参考[`指差确认`](https://enochgao.github.io/chore/pointing-and-calling.html)规避操作失误。
 
 ## 分支说明
 
-| 分支        | 分支说明                                              |
-| ----------- | ----------------------------------------------------- |
-| feature     | 功能分支，最小的操作单元（以下成为自己的分支）        |
-| dev         | 开发发布分支（Development）                           |
-| fat         | 测试发布分支: 工厂验收测试（Factory Acceptance Test） |
-| pet         | 性能测试（Performance Evaluation Test）               |
-| uat         | 用户验收分支：用户验收测试（User Acceptance Test）    |
-| pre         | 预发布分支（pre-release）                             |
-| pro         | 生产发布分支（Production）                            |
-| master/main | 主分支，一般用来打 tag 版本                           |
+| 分支        | 分支说明                                              | 分支权限                          |
+| ----------- | ----------------------------------------------------- | --------------------------------- |
+| feature     | 功能分支，最小的操作单元（以下成为自己的分支）        | pull，push，delete，create，merge |
+| dev         | 开发发布分支（Development）                           | pull，push，merge                 |
+| fat         | 测试发布分支: 工厂验收测试（Factory Acceptance Test） | pull                              |
+| pet         | 性能测试（Performance Evaluation Test）               | pull                              |
+| uat         | 用户验收分支：用户验收测试（User Acceptance Test）    | pull                              |
+| pre         | 预发布分支（pre-release）                             | pull                              |
+| pro         | 生产发布分支（Production）                            | pull                              |
+| master/main | 主分支，一般用来打 tag 版本                           | pull                              |
 
 **
 注意：
 除了 feature 分支外，禁止在其他的分支上直接进行修改提交。
+开发人员具有feature分支的所有权限，dev分支具有拉取，合并，推送权限，其他分支由项目负责人或发版人员决定
 **
 
 ## 分支规范
 
-从对应版本 dev 分支迁出自己的分支，如本期版本为 v1.0.0：
+从对应版本 dev 分支迁出自己的分支，假设本期版本为 v1.0.0：
 
 ```ts
 dev-v1.0.0---->feature/xxx-v1.0.0
@@ -36,6 +37,8 @@ dev-v1.0.0---->feature/xxx-v1.0.0
 分支操作要看清分支后再操作，代码的修改只能在自己的分支上进行
 
 提交代码时，建议添加钩子函数检测代码规范以及提交的 git message 信息规范，进行代码风格校验，两者通过后通过后才能提交成功，否则会被拒绝提交
+
+发布开发环境，将dev-1.0.0合并到dev分支，编译，提交，推送
 
 ## git message 规范
 
