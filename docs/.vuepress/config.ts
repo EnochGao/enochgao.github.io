@@ -17,7 +17,7 @@ export default defineUserConfig({
   base: '/',
   theme: defaultTheme({
     logo: '/images/avatar.png',
-    repo: 'https://github.com/EnochGao/blog',
+    repo: 'https://github.com/EnochGao',
     docsDir: 'docs',
     locales: {
       '/': {
