@@ -8,8 +8,6 @@ import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Enoch Blog',
