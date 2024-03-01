@@ -4,7 +4,14 @@ export const sidebar: SidebarConfig = {
   '/chore': [
     {
       text: '',
-      children: ['/chore/chore.md', '/chore/emoji.md', '/chore/vscode.md','/chore/git.md','/chore/pointing-and-calling'],
+      children: [
+        '/chore/chore.md',
+        '/chore/emoji.md',
+        '/chore/vscode.md',
+        '/chore/git.md',
+        '/chore/pointing-and-calling',
+        '/chore/plan.md',
+      ],
     },
   ],
   '/angular/directive': [
