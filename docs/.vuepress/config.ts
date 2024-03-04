@@ -3,7 +3,6 @@ import { defaultTheme, defineUserConfig } from 'vuepress';
 import { commentPlugin } from 'vuepress-plugin-comment2';
 import { copyCodePlugin } from 'vuepress-plugin-copy-code2';
 import { readingTimePlugin } from 'vuepress-plugin-reading-time2';
-import { prismjsPlugin } from '@vuepress/plugin-prismjs';
 
 import { navbar } from './configs/navbar';
 import { sidebar } from './configs/sidebar';
@@ -11,8 +10,9 @@ import { sidebar } from './configs/sidebar';
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Enoch Blog',
-  description: '珍惜眼前，技术并不是生活的全部。',
+  description: '珍惜眼前，技术并不是生活的全部...',
   base: '/',
+
   theme: defaultTheme({
     logo: '/images/avatar.png',
     repo: 'https://github.com/EnochGao',
