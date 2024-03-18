@@ -90,9 +90,9 @@ npm run serve
 - 真正的按需编译，不再等待整个应用编译完成。
 - `webpack`构建 与 `vite`构建对比图如下：
 
-  <img src="images/vue-webpack.png" alt="webpack构建" title="webpack构建" style="zoom:20%;box-shadow:0 0 10px black" />
+  <img src="./images/vue-webpack.png" alt="webpack构建" title="webpack构建" style="zoom:20%;box-shadow:0 0 10px black" />
 
-   <img src="images/vue-vite.png" alt="vite构建" title="vite构建" style="zoom: 20%;box-shadow:0 0 10px black" />
+   <img src="./images/vue-vite.png" alt="vite构建" title="vite构建" style="zoom: 20%;box-shadow:0 0 10px black" />
 
 * 具体操作如下（点击查看[官方文档](https://cn.vuejs.org/guide/quick-start.html#creating-a-vue-application)）
 
@@ -148,7 +148,7 @@ export default {
 
 安装官方推荐的`vscode`插件：
 
-<img src="images/vue-plugin.png" style="zoom:50%;" />
+<img src="./images/vue-plugin.png" style="zoom:50%;" />
 
 总结：
 
@@ -207,13 +207,13 @@ export default {
 
 `Options`类型的 `API`，数据、方法、计算属性等，是分散在：`data`、`methods`、`computed`中的，若想新增或者修改一个需求，就需要分别修改：`data`、`methods`、`computed`，不便于维护和复用。
 
-<img src="images/vue-optionapi-1.gif" alt="1.gif" style="zoom:70%;border-radius:20px" /> <img src="images/vue-optionapi-2.gif" alt="2.gif" style="zoom:70%;border-radius:20px" />
+<img src="./images/vue-optionapi-1.gif" alt="1.gif" style="zoom:70%;border-radius:20px" /> <img src="./images/vue-optionapi-2.gif" alt="2.gif" style="zoom:70%;border-radius:20px" />
 
 #### Composition API 的优势
 
 可以用函数的方式，更加优雅的组织代码，让相关功能的代码更加有序的组织在一起。
 
-<img src="images/vue-composition-1.gif" alt="3.gif" style="height:300px;border-radius:10px"  /> <img src="images/vue-composition-2.gif" alt="4.gif" style="height:300px;border-radius:10px"  />
+<img src="./images/vue-composition-1.gif" alt="3.gif" style="height:300px;border-radius:10px"  /> <img src="./images/vue-composition-2.gif" alt="4.gif" style="height:300px;border-radius:10px"  />
 
 > 说明：以上四张动图原创作者：大帅老猿
 
@@ -513,7 +513,7 @@ function test() {
 
 > 1. `ref`创建的变量必须使用`.value`（可以使用`volar`插件自动添加`.value`）。
 >
->    <img src="images/vue-auto-value.png" style="zoom:50%;border-radius:20px" />
+>    <img src="./images/vue-auto-value.png" style="zoom:50%;border-radius:20px" />
 >
 > 2. `reactive`重新分配一个新对象，会**失去**响应式（可以使用`Object.assign`去整体替换）。
 
@@ -569,7 +569,7 @@ function changeGender() {
 
 作用：根据已有数据计算出新数据（和`Vue2`中的`computed`作用一致）。
 
-<img src="images/vue-computed.gif" style="zoom:20%;" />
+<img src="./images/vue-computed.gif" style="zoom:20%;" />
 
 ```vue
 <template>
@@ -1289,7 +1289,7 @@ defineExpose({ name, age });
 
 ### 4.1. 【对路由的理解】
 
-<img src="images/vue-router-1.png"  style="zoom:20%;border-radius:40px" />
+<img src="./images/vue-router-1.png"  style="zoom:20%;border-radius:40px" />
 
 ### 4.2. 【基本切换效果】
 
@@ -1928,7 +1928,7 @@ export const useTalkStore = defineStore('talk', () => {
 
 **常见搭配形式：**
 
-<img src="images/vue-propos.png" style="zoom:60%;" />
+<img src="./images/vue-propos.png" style="zoom:60%;" />
 
 ### 6.1. 【props】
 
