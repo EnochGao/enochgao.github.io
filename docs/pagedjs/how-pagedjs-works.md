@@ -30,7 +30,7 @@ PS.这并不妨碍你在内容中使用CSS的column属性
 
 ## Polisher：填充打印声明
 
-Polisher是Paged.js的一部分，它为每个页面翻译CSS规则。它构建新的盒子来创建页面布局，并将内容放置在这些页面中。我们使用CSS树库从文本中解析CSS，并用类替换 @page 规则。Polisher还用DOM变量替换了诸如运行标题、页面计数器或CSS生成的内容函数的调用。
+Polisher是Paged.js的一部分，它为每个页面翻译CSS规则。它构建新的盒子来创建页面布局，并将内容放置在这些页面中。我们使用css-tree这个库从文本中解析CSS，并用类替换 @page 规则。Polisher还用DOM变量替换了诸如运行标题、页面计数器或CSS生成的内容函数的调用。
 
 ![img](https://pagedjs.org/images/div-pages.png)
 
