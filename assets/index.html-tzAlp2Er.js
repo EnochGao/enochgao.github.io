@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8f7627a2","path":"/weekly-dairy/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1705904291000,"contributors":[{"name":"enochgao","email":"enochgao@qq.com","commits":1}]},"filePathRelative":"weekly-dairy/README.md","readingTime":{"minutes":0.05,"words":16}}');export{e as data};
