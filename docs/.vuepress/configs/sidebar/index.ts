@@ -11,6 +11,7 @@ export const sidebar: SidebarConfig = {
         '/chore/git.md',
         '/chore/pointing-and-calling',
         '/chore/plan.md',
+        '/chore/vue3.md',
       ],
     },
   ],
