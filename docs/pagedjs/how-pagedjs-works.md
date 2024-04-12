@@ -86,22 +86,23 @@ Paged.js 将这些转换为浏览器可以理解的 CSS：
 
 ```html
 <div id="page-1" class="pagedjs_page">
- <div class="pagedjs_pagebox">
-     <div class="pagedjs_margin pagedjs_margin-bottom-left hasContent">
-    <div class="pagedjs_margin-content">
-          <!-- ::after -->
-        </div>
-   </div>
-      <div class="pagedjs_margin pagedjs_margin-bottom-center hasContent">
-    <div class="pagedjs_margin-content">
-          <!-- ::after -->
-        </div>
-   </div>
+  <div class="pagedjs_pagebox">
+    <div class="pagedjs_margin pagedjs_margin-bottom-left hasContent">
+      <div class="pagedjs_margin-content">
+        <!-- ::after -->
+      </div>
     </div>
-  <div class="pagedjs_area">
-   <!-- content of the page -->
+
+    <div class="pagedjs_margin pagedjs_margin-bottom-center hasContent">
+      <div class="pagedjs_margin-content">
+        <!-- ::after -->
+      </div>
+    </div>
+
+    <div class="pagedjs_area">
+      <!-- content of the page -->
+    </div>
   </div>
- </div>
 </div>
 ```
 
