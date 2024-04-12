@@ -8,10 +8,10 @@
 
 幸运的是，W3C 在 CSS 方面的工作产生了 CSS 标准的特殊模块，用于在打印过程中管理 HTML 文档的布局。这些模块可以通过媒体查询 @media print{} 在打印样式表中使用，并且只在以下情况下使用当 web 页面从浏览器打印对话框中打印，以创建一个 PDF。
 
-- [CSS 分页媒体模块(3)](https://www.w3.org/TR/css-page-3/) ”描述了将流程划分为页面的页面模型。它增加了分页、页边距、页面大小和方向、页眉和页脚、widows 和 orphans 以及图像方向的功能。”
-- [为分页媒体模块生成的 CSS 内容](https://www.w3.org/TR/css-gcpm-3/)定义了打印文档内容显示的许多特殊要求:运行页眉和页脚、脚注、交叉引用或目录生成的文本、PDF 书签等。
-- [CSS 碎片化模块(第三版)](https://www.w3.org/TR/css-break-3/)定义了如何以及在哪里对 CSS 盒子进行碎片化，包括跨分页符。(这个模块不是专门用于 print 的。)
-- [CSS 页面浮动](https://www.w3.org/TR/css-page-floats-3/)定义了如何从正常流中删除元素，并将其放置到不同的位置，具体取决于页面。
+- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/) ”描述了将流程划分为页面的页面模型。它增加了分页、页边距、页面大小和方向、页眉和页脚、widows 和 orphans 以及图像方向的功能。”
+- [CSS Generated Content for Paged Media Module](https://www.w3.org/TR/css-gcpm-3/)定义了打印文档内容显示的许多特殊要求:运行页眉和页脚、脚注、交叉引用或目录生成的文本、PDF 书签等。
+- [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)定义了如何以及在哪里对 CSS 盒子进行碎片化，包括跨分页符。(这个模块不是专门用于 print 的。)
+- [CSS Page Floats](https://www.w3.org/TR/css-page-floats-3/)定义了如何从正常流中删除元素，并将其放置到不同的位置，具体取决于页面。
 
 我们尽量尊重规范，但有时，它们可能不明确或留下一定程度的不确定性。因此，paged.js 的实现是由我们自己的解释组成的，当浏览器实现这些规则时，它们可能与我们构建的不同。
 
