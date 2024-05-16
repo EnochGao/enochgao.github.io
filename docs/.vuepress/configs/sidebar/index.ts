@@ -28,9 +28,24 @@ export const sidebar: SidebarConfig = {
   ],
   '/design-patterns': [
     {
-      text: '设计模式',
+      text: '设计原则',
       collapsible: true,
       children: ['/design-patterns/design-principle.md'],
+    },
+    {
+      text: '创建型',
+      collapsible: true,
+      children: [],
+    },
+    {
+      text: '结构型',
+      collapsible: true,
+      children: ['/design-patterns/structural/decorator.md'],
+    },
+    {
+      text: '行为型',
+      collapsible: true,
+      children: [],
     },
   ],
   '/pagedjs': [
