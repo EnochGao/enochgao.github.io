@@ -43,6 +43,7 @@ export const sidebar: SidebarConfig = {
       children: [
         '/design-patterns/structural/decorator.md',
         '/design-patterns/structural/adapter.md',
+        '/design-patterns/structural/bridge.md',
       ],
     },
     {
