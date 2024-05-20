@@ -20,10 +20,10 @@
   "homepage": "https://github.com/EnochGao/blog#readme",
   "devDependencies": {
     "@vuepress/client": "2.0.0-rc.0",
-    "@vuepress/plugin-docsearch": "^2.0.0-rc.0",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
     "@vuepress/plugin-nprogress": "2.0.0-rc.0",
     "@vuepress/plugin-prismjs": "2.0.0-rc.0",
-    "@vuepress/theme-default": "^2.0.0-rc.0",
+    "@vuepress/theme-default": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
     "package-name": "^0.1.0",
     "vue": "^3.3.10",
