@@ -40,7 +40,10 @@ export const sidebar: SidebarConfig = {
     {
       text: '结构型',
       collapsible: true,
-      children: ['/design-patterns/structural/decorator.md'],
+      children: [
+        '/design-patterns/structural/decorator.md',
+        '/design-patterns/structural/adapter.md',
+      ],
     },
     {
       text: '行为型',
