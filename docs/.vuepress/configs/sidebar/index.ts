@@ -44,6 +44,7 @@ export const sidebar: SidebarConfig = {
         '/design-patterns/structural/decorator.md',
         '/design-patterns/structural/adapter.md',
         '/design-patterns/structural/bridge.md',
+        '/design-patterns/structural/composite.md',
       ],
     },
     {
