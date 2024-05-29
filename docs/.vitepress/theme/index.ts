@@ -1,11 +1,9 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue';
 import type { Theme } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
-import mediumZoom from 'medium-zoom';
-import { onMounted, watch, nextTick } from 'vue';
-import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+import DefaultTheme from 'vitepress/theme';
+import { h } from 'vue';
 import './style.css';
 
 export default {
@@ -42,17 +40,6 @@ export default {
       //如果为false，则表示未启用
       //您可以使用“comment:true”序言在页面上单独启用它
       true
-    );
-    const initZoom = () => {
-      // mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
-      mediumZoom('.main img', { background: 'var(--vp-c-bg)' }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
-    };
-    onMounted(() => {
-      initZoom();
-    });
-    watch(
-      () => route.path,
-      () => nextTick(() => initZoom())
     );
   },
 } satisfies Theme;

@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "medium-zoom": "^1.1.0",
     "vitepress": "^1.2.2",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },

@@ -9,7 +9,7 @@ export default defineConfig({
   description: '珍惜眼前，技术并不是生活的全部...',
   lastUpdated: true,
   base:'/',
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/images/avatar.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/images/avatar.png',
