@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'Enoch Blog',
   description: '珍惜眼前，技术并不是生活的全部...',
   lastUpdated: true,
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/images/avatar.png',
@@ -21,6 +22,10 @@ export default defineConfig({
         apiKey: 'e9069e1fc4843517d12e07735a87104b',
         indexName: 'enochgaoio',
       },
+    },
+    footer: {
+      message: '转载请注明来源',
+      copyright: 'Copyright © 2019-present EnochGao',
     },
   },
 });
