@@ -25,7 +25,7 @@ export default defineConfig({
     },
     footer: {
       message: '转载请注明来源',
-      copyright: 'Copyright © 2019-present EnochGao',
+      copyright: 'Copyright © 2022-present EnochGao',
     },
   },
 });
