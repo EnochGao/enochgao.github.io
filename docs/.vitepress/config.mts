@@ -19,7 +19,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'GVP52MKQ3I',
-        apiKey: 'e9069e1fc4843517d12e07735a87104b',
+        apiKey: 'ccf9ce93094bc4cabc03a6fab7827991',
         indexName: 'enochgaoio',
         placeholder: '搜索文档',
         translations: {
