@@ -3,9 +3,8 @@
 layout: home
 
 hero:
-  name: "Enoch Blog"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: 'Enoch Blog'
+  tagline: 珍惜眼前，技术并不是生活的全部...
   actions:
     - theme: brand
       text: Markdown Examples
@@ -14,12 +13,4 @@ hero:
       text: API Examples
       link: /api-examples
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

@@ -1,28 +1,17 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
+import { navbar } from './configs/navbar';
+import { sidebar } from './configs/sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Enoch Blog",
-  description: "A VitePress Site",
+  lang: 'zh-CN',
+  title: 'Enoch Blog',
+  base: '/',
+  description: '珍惜眼前，技术并不是生活的全部...',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+    nav: navbar,
+    sidebar: sidebar,
+    socialLinks: [{ icon: 'github', link: 'https://github.com/EnochGao' }],
+  },
+});
