@@ -7,7 +7,7 @@ hero:
   tagline: 珍惜眼前，技术并不是生活的全部...
 
   image:
-  src: /images/home.png
+  src: images/home.png
   alt: VitePress
 
   actions:
