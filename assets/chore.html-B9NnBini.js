@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6bd1a087","path":"/chore/chore.html","title":"github 中的语言缩写","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1705483962000,"contributors":[{"name":"enochgao","email":"enochgao@qq.com","commits":1}]},"filePathRelative":"chore/chore.md","readingTime":{"minutes":0.75,"words":225}}');export{e as data};

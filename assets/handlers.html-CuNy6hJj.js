@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2ea71e26","path":"/pagedjs/handlers.html","title":"处理器、钩子和自定义 javascript","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1706067243000,"contributors":[{"name":"enochgao","email":"enochgao@qq.com","commits":1}]},"filePathRelative":"pagedjs/handlers.md","readingTime":{"minutes":0.06,"words":19}}');export{e as data};
