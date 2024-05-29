@@ -1,39 +1,14 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EnochGao/blog.git"
-  },
-  "author": "EnochGao",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EnochGao/blog/issues"
-  },
-  "homepage": "https://github.com/EnochGao/blog#readme",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
-    "@vuepress/plugin-nprogress": "2.0.0-rc.0",
-    "@vuepress/plugin-prismjs": "2.0.0-rc.0",
-    "@vuepress/theme-default": "2.0.0-rc.0",
-    "@vuepress/utils": "2.0.0-rc.0",
-    "package-name": "^0.1.0",
-    "vue": "^3.3.10",
-    "vuepress": "2.0.0-rc.0",
-    "vuepress-plugin-comment2": "2.0.0-rc.0",
-    "vuepress-plugin-copy-code2": "2.0.0-rc.0",
-    "vuepress-plugin-reading-time2": "2.0.0-rc.0"
+    "vitepress": "^1.2.2",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },
-  "peerDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "vue": "^3.3.10"
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
   }
 }
