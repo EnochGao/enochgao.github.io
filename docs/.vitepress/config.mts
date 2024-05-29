@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'Enoch Blog',
   description: '珍惜眼前，技术并不是生活的全部...',
   lastUpdated: true,
+  base:'/',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
