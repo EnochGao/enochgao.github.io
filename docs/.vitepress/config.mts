@@ -6,12 +6,21 @@ import { sidebar } from './configs/sidebar';
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Enoch Blog',
-  base: '/',
   description: '珍惜眼前，技术并不是生活的全部...',
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/images/avatar.png',
     nav: navbar,
     sidebar: sidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/EnochGao' }],
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'GVP52MKQ3I',
+        apiKey: 'e9069e1fc4843517d12e07735a87104b',
+        indexName: 'enochgaoio',
+      },
+    },
   },
 });
