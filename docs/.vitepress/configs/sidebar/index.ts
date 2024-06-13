@@ -91,6 +91,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: '适配器模式', link: '/design-patterns/structural/adapter.md' },
         { text: '桥接模式', link: '/design-patterns/structural/bridge.md' },
         { text: '组合模式', link: '/design-patterns/structural/composite.md' },
+        { text: '外观模式', link: '/design-patterns/structural/facade.md' },
       ],
     },
     {
