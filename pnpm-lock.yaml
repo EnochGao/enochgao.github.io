@@ -14,7 +14,7 @@ importers:
     devDependencies:
       vitepress:
         specifier: ^1.2.2
-        version: 1.2.3(@algolia/client-search@4.23.3)(search-insights@2.14.0)
+        version: 1.2.3(@algolia/client-search@4.23.3)(postcss@8.4.38)(search-insights@2.14.0)
       vitepress-plugin-comment-with-giscus:
         specifier: ^1.1.15
         version: 1.1.15(vue@3.4.27)
@@ -780,6 +780,7 @@ snapshots:
       '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.23.3)(algoliasearch@4.23.3)
       '@docsearch/css': 3.6.0
       algoliasearch: 4.23.3
+    optionalDependencies:
       search-insights: 2.14.0
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -1026,8 +1027,9 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.10.0(vue@3.4.27)
       '@vueuse/shared': 10.10.0(vue@3.4.27)
-      focus-trap: 7.5.4
       vue-demi: 0.14.8(vue@3.4.27)
+    optionalDependencies:
+      focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1196,7 +1198,7 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  vitepress@1.2.3(@algolia/client-search@4.23.3)(search-insights@2.14.0):
+  vitepress@1.2.3(@algolia/client-search@4.23.3)(postcss@8.4.38)(search-insights@2.14.0):
     dependencies:
       '@docsearch/css': 3.6.0
       '@docsearch/js': 3.6.0(@algolia/client-search@4.23.3)(search-insights@2.14.0)
@@ -1214,6 +1216,8 @@ snapshots:
       shiki: 1.6.2
       vite: 5.2.12
       vue: 3.4.27
+    optionalDependencies:
+      postcss: 8.4.38
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'
