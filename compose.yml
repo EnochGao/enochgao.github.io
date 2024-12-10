@@ -1,0 +1,9 @@
+name: enochgao
+services:
+  blog:
+    build:
+      context: ./
+    ports:
+      - '4200:4200'
+    # volumes:
+    #   - ./dist:/var/www/html
