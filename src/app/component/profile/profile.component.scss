@@ -26,25 +26,25 @@ a {
 }
 
 hr {
-  border: none; /*取消hr預設的border*/
+  border: none;
   border-bottom: 4px solid #a0dbdb;
   width: 30%;
-  margin-left: 0; /*讓hr靠左*/
+  margin-left: 0;
 }
 
-.resume {
+.resume-container {
   display: flex;
-  // max-width: 950px;
   padding: 50px;
   border: 8px solid #a0dbdb;
-  position: relative; /*讓absolute做基準*/
+  position: relative;
   box-shadow: 0 0 35px #393e46;
 }
-.top {
+
+.profile {
   position: relative;
 }
 
-.bighead {
+.avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -56,8 +56,15 @@ hr {
   box-shadow: 0 0 10px #393e46;
 }
 
-.myname {
+.name {
   margin-left: 150px;
+}
+
+.icons-container {
+  font-size: 40px;
+  a {
+    margin: 0 10px;
+  }
 }
 
 .left,
