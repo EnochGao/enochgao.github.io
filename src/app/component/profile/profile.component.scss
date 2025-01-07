@@ -1,0 +1,265 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  margin: 0 0 25px;
+}
+
+h2::after {
+  content: ''; /*after文字內容不必設定*/
+  display: inline-block; /*after用區塊呈現，並且可以設定寬高*/
+  width: 20px;
+  height: 8px;
+  background-color: #56a7a7;
+  margin-left: 10px;
+}
+
+h4 {
+  margin: 40px 0 0;
+}
+
+a {
+  text-decoration: initial;
+  color: initial;
+}
+
+hr {
+  border: none; /*取消hr預設的border*/
+  border-bottom: 4px solid #a0dbdb;
+  width: 30%;
+  margin-left: 0; /*讓hr靠左*/
+}
+
+.resume {
+  display: flex;
+  // max-width: 950px;
+  padding: 50px;
+  border: 8px solid #a0dbdb;
+  position: relative; /*讓absolute做基準*/
+  box-shadow: 0 0 35px #393e46;
+}
+.top {
+  position: relative;
+}
+
+.bighead {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background: url(https://avatars.githubusercontent.com/u/41459067?v=4);
+  background-size: cover;
+  box-shadow: 0 0 10px #393e46;
+}
+
+.myname {
+  margin-left: 150px;
+}
+
+.left,
+.right {
+  padding: 15px;
+}
+
+.left {
+  flex: 5;
+  padding-right: 50px;
+  border-right: 1px solid #a0dbdb;
+}
+
+.right {
+  flex: 7;
+  padding-left: 50px;
+  padding-top: 150px;
+}
+
+.decoration {
+  width: 300px;
+  height: 140px;
+  background: linear-gradient(
+    135deg,
+    #a0dbdb,
+    #fcea90
+  ); /*135deg變成從左上到右下漸層*/
+  border-radius: 70px 0 0 70px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+/* Experience / Works */
+.year {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.year ul {
+  padding-left: 10px; /*要拿來做框線*/
+  margin-left: 10px;
+  border-left: 4px solid #443f3f;
+}
+
+.year:nth-child(1) ul {
+  border-color: #7bb6a2;
+}
+
+.year:nth-child(2) ul {
+  border-color: #a9c99c;
+}
+
+.year:nth-child(3) ul {
+  border-color: #dadc95;
+}
+
+/* listSkill */
+.listSkill {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listSkill li {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box; /*讓width計算是從border往內*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 圓形圖 */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fcea90;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; /*把超過圓形的地方隱藏起來*/
+}
+
+.circle::after {
+  /*中間的小圓，同body背景色*/
+  content: '';
+  display: block;
+  width: calc(100% - 20px); /*calc()去計算*/
+  height: calc(100% - 20px); /*calc()去計算*/
+  border-radius: 50%;
+  background-color: #f9fbfc;
+  position: relative; /*要給優先度必需是可以定位的元素，所以給它 position: relative*/
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*top、left完後，小圓的左上角剛好在正中間，所以要再平移回去50%*/
+}
+
+.p90,
+.p180,
+.p270,
+.p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #a0dbdb;
+}
+
+.p180 {
+  top: 50%;
+}
+
+.p270 {
+  left: 0;
+  top: 50%;
+}
+
+.p360 {
+  left: 0;
+  top: 0;
+}
+
+/* 社群icon */
+.btn-fb,
+.btn-github {
+  // font-size: 40px;
+  margin-right: 10px;
+}
+
+.btn-fb {
+  color: #4267b2;
+}
+
+/* Related Skills */
+.listRelate .bar {
+  width: 150px;
+  height: 10px;
+  border: 2px solid #56a7a7;
+  border-radius: 5px;
+}
+
+.listRelate li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.value {
+  height: 100%;
+  background-color: #56a7a7;
+}
+
+.value.p10 {
+  width: 10%;
+}
+
+.value.p20 {
+  width: 20%;
+}
+
+.value.p30 {
+  width: 30%;
+}
+
+.value.p40 {
+  width: 40%;
+}
+
+.value.p50 {
+  width: 50%;
+}
+
+.value.p60 {
+  width: 60%;
+}
+
+.value.p70 {
+  width: 70%;
+}
+
+.value.p80 {
+  width: 80%;
+}
+
+.value.p90 {
+  width: 90%;
+}
+
+.value.p100 {
+  width: 100%;
+}
+
+/* Portfolio */
+.listPor li {
+  margin-bottom: 10px;
+}
+
+.listPor a {
+  color: #137adb;
+}

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
-import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
 const GITHUB_ICON = `
@@ -12,7 +11,7 @@ const GITHUB_ICON = `
 
 @Component({
   selector: 'app-root',
-  imports: [MatButtonModule, MatGridListModule, MatIconModule],
+  imports: [MatCardModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
